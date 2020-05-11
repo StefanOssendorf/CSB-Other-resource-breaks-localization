@@ -1,0 +1,12 @@
+﻿@page "/"
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Index> Loc
+
+<h1>@Loc["Key1"]</h1>
+<h2>@(Foo.Globalization.Language.Language.Key1 ?? "Not found :-(")</h2>
+
+
+<p>
+    Welcome to your new app.
+</p>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
